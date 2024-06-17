@@ -1,4 +1,4 @@
-package com.coffice;
+package com.brealit;
 
 import android.app.Activity;
 import android.view.WindowManager;
@@ -8,7 +8,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 public class ScreenshotBlocker extends CordovaPlugin{
-    private com.coffice.ScreenshotBlocker mContext;
+    private com.brealit.ScreenshotBlocker mContext;
 
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {

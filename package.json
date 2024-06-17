@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-screenshot-blocker",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Cordova plugin for prevent screenCapture",
   "cordova": {
     "id": "cordova-plugin-screenshot-blocker",
