@@ -32,6 +32,18 @@ UIImageView* cover;
                                                  name:kScreenRecordingDetectorRecordingStatusChangedNotification
                                                object:nil];
 
+    CDVAppDelegate *appDelegate = (CDVAppDelegate *)[UIApplication sharedApplication].delegate;
+    UIWindow *mainWindow = appDelegate.window;
+
+    UITextField *field = [[UITextField alloc] init];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, field.frame.size.width, field.frame.size.height)];
+    field.secureTextEntry = YES;
+    [view addSubview:field];
+    [mainWindow.layer.superlayer addSublayer:field.layer];
+    [[field.layer.sublayers lastObject] addSublayer:mainWindow.layer];
+    field.leftView = view;
+    field.leftViewMode = UITextFieldViewModeAlways;
+
     /*
      userDidTakeScreenshotNotification
      */
