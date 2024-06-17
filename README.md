@@ -1,6 +1,10 @@
-# cordova-plugin-prevent-screenshot-coffice
+# cordova-plugin-screenshot-blocker
+
+Based on https://github.com/flotrugliocoffice/cordova-plugin-prevent-screenshot-coffice (Copyright (c) 2019 flotrugliocoffice)
 
 This is a cordova plugin to enable/disable screenshots in android and ios 
+
+For now, it on iOS blocks any screenshots.
 
 ## Supported Platforms
 
@@ -11,8 +15,6 @@ This is a cordova plugin to enable/disable screenshots in android and ios
 
 Cordova local build:
     cordova plugin add <GIT URL PATH>
-
-
 
 
 ## Usage in javascript
